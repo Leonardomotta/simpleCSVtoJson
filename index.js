@@ -56,7 +56,9 @@ let buffer = (opa)=>{
 
 
 
-fs.writeFileSync('./to.json',JSON.stringify(csvTojson.Tojson("./convertcsvComrep.csv")))
+csvTojson.writeTo =(path)=>{
+    fs.writeFileSync(path,JSON.stringify(csvTojson.Tojson("./convertcsvComrep.csv")))
+}
 
 
 
