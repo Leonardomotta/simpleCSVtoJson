@@ -75,3 +75,5 @@ helpers.csvParse = json =>{
         return keys.join(";")+"\n"+ k.join(";")
     
     }
+
+module.exports= helpers;
